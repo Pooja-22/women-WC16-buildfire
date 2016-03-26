@@ -3,44 +3,21 @@
  */
 
 angular.module('women-WC16')
-    .controller('MainCtrl', ['$scope', 'teamResult', 'allMatches', 'resultByCode', 'groupResults', 'teams', function ($scope, teamResult, allMatches, resultByCode, groupResults, teams) {
-        $scope.dataValue = '';
+    .controller('MainCtrl', ['$scope','womenService', function ($scope,womenService) {
 
-        $scope.dataValueChanged = function () {
-            switch ($scope.dataValue) {
-                case 'A':
-                    teamResult.getData(function (data) {
-                        $scope.result = data;
-                    });
-                    break;
-                case 'B':
-                    allMatches.getData(function (data) {
-                        $scope.result = data;
-                    });
-                    break;
-                case 'C':
-                    resultByCode.getData(function (data) {
-                        $scope.result = data;
-                    });
-                    break;
-                case 'D':
-                    groupResults.getData(function (data) {
-                        $scope.result = data;
-                    });
-                    break;
-                case 'E':
-                    teams.getData(function (data) {
-                        $scope.result = data;
-                    });
-                    break;
-            }
-
+        $scope.allMatches = function(){
+            $scope.selected1 = true;
+          womenService.setAllMatches($scope.selected1);
         };
-
-        $scope.change = function(){
+        $scope.removeAllMatches = function(){
             $scope.selected1 = false;
-
+            womenService.setAllMatches($scope.selected1);
         };
+
+        $scope.checking = function(){
+            console.log("checking",womenService.getAllMatches());
+        }
+
 
 
         /// create a new instance of the buildfire carousel editor
@@ -50,7 +27,6 @@ angular.module('women-WC16')
             // create an instance and pass it the items if you don't have items yet just pass []
             editor.loadItems(carouselItems);
         }
-
         /// call buildfire datastore to see if there are any previously saved items
         buildfire.datastore.get(function (err, obj) {
             if (err)

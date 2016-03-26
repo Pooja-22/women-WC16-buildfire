@@ -2,4 +2,4 @@
  * Created by pooja on 22/3/16.
  */
 
-angular.module('women-WC16-Widget',['ngRoute','women-WC16']);
+angular.module('women-WC16-Widget',['ngRoute','ngResource','women-WC16']);

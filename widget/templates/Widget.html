@@ -1,19 +1,22 @@
 <div id="carousel"></div>
 <hr>
-<div style="padding: 10px;padding-top: 0px;">
-    <div ng-show="">
-        <input type="radio" ng-model="dataValue" value="A" ng-change="dataValueChanged()">All Results
-    </div>
-    <div ng-show="">
-        <input type="radio" ng-model="dataValue" value="B" ng-change="dataValueChanged()">All Matches
-    </div>
-    <div ng-show="">
-        <input type="radio" ng-model="dataValue" value="C" ng-change="dataValueChanged()">Team Result
-    </div>
-    <div ng-show="">
-        <input type="radio" ng-model="dataValue" value="D" ng-change="dataValueChanged()">Group Results
-    </div>
-    <div ng-show="">
-        <input type="radio" ng-model="dataValue" value="E" ng-change="dataValueChanged()">Teams
-    </div>
+        <div style="height: 50px;background: red;" ng-click="allMatches()"></div>
+<div>
+    <form>
+        <span ng-show="selected1">
+            <input type="radio" ng-model="dataValue" value="B" ng-change="dataValueChanged()" name="dataValue">All Matches<br>
+        </span>
+        <span ng-show="selected2" ng-init="allResults()">
+            <input type="radio" ng-model="dataValue" value="A" ng-change="dataValueChanged()" name="dataValue">All Results<br>
+        </span>
+        <span ng-show="selected3" ng-init="teamResults()">
+            <input type="radio" ng-model="dataValue" value="C" ng-change="dataValueChanged()" name="dataValue">Team Result<br>
+        </span>
+        <span ng-show="selected4" ng-init="groupResults()">
+            <input type="radio" ng-model="dataValue" value="D" ng-change="dataValueChanged()" name="dataValue">Group Results<br>
+        </span>
+        <span ng-show="selected5" ng-init="teams()">
+            <input type="radio" ng-model="dataValue" value="E" ng-change="dataValueChanged()" name="dataValue">Teams<br>
+        </span>
+    </form>
 </div>

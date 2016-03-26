@@ -4,7 +4,46 @@
 
 angular.module('women-WC16-Widget')
 
-    .controller('WidgetCtrl', ['MainCtrl', function (MainCtrl) {
+    .controller('WidgetCtrl', ['$scope', 'teamResult', 'allMatches', 'resultByCode', 'groupResults', 'teams','womenService', function ($scope, teamResult, allMatches, resultByCode, groupResults, teams, womenService) {
+
+        $scope.dataValue = '';
+        $scope.dataValueChanged = function () {
+            switch ($scope.dataValue) {
+                case 'A':
+                    teamResult.getData(function (data) {
+                        $scope.result = data;
+                    });
+                    break;
+                case 'B':
+                    allMatches.getData(function (data) {
+                        $scope.result = data;
+                    });
+                    break;
+                case 'C':
+                    resultByCode.getData(function (data) {
+                        $scope.result = data;
+                    });
+                    break;
+                case 'D':
+                    groupResults.getData(function (data) {
+                        $scope.result = data;
+                    });
+                    break;
+                case 'E':
+                    teams.getData(function (data) {
+                        $scope.result = data;
+                    });
+                    break;
+            }
+
+        };
+
+        $scope.allMatches = function(){
+            console.log("trying",womenService.getAllMatches());
+          $scope.selected1 = womenService.getAllMatches();
+        };
+
+
 
         ///create new instance of buildfire carousel viewer
         var view = new buildfire.components.carousel.view("#carousel", []);
@@ -27,6 +66,5 @@ angular.module('women-WC16-Widget')
         buildfire.datastore.onUpdate(function (e) {
             loadItems(e.obj.carouselItems);
         });
-        console.log(MainCtrl,'frgthyjkilo;kjkhgfdf')
 
     }]);
