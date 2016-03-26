@@ -38,12 +38,6 @@ angular.module('women-WC16-Widget')
 
         };
 
-        $scope.allMatches = function(){
-            console.log("trying",womenService.getAllMatches());
-          $scope.selected1 = womenService.getAllMatches();
-        };
-
-
 
         ///create new instance of buildfire carousel viewer
         var view = new buildfire.components.carousel.view("#carousel", []);
