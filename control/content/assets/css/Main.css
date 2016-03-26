@@ -1,0 +1,13 @@
+.changeCss{
+    position: relative;
+    border:1px solid red;
+    height:50px;
+    width:200px;
+    padding-top: 10px;
+    padding-left: 2px;
+}
+.removeIcon{
+    position:absolute;
+    top:5px;
+    right:5px;
+}

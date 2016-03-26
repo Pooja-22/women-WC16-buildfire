@@ -1,0 +1,77 @@
+<div>
+    <div id="carousel"></div>
+    <hr>
+    <div class="item row clearfix">
+        <div class="main col-md-12 pull-left">
+            <textarea ui-tinymce="ContentHome.bodyWYSIWYGOptions" class="form-control"
+                      rows="3" col="100"
+                      placeholder="This is WYSIWYG"
+                      data-ng-model="ContentHome.data.content.description"></textarea>
+        </div>
+    </div>
+    <hr>
+    <div ng-class="{'changeCss':selected1===true}">
+        <div ng-click="selected1 = true">
+            <input type="radio" ng-disabled="true">All Matches
+        </div>
+        <span class="glyphicon glyphicon-remove" style="position: absolute;top: 5px;right: 5px;cursor: pointer;"
+              ng-show="selected1" ng-click="selected1 = false"></span>
+    </div>
+    <div ng-class="{'changeCss':selected2===true}">
+        <div ng-click="selected2 = true">
+            <input type="radio" ng-disabled="true">All Results
+        </div>
+        <span class="glyphicon glyphicon-remove" style="position: absolute;top: 5px;right: 5px;cursor: pointer;"
+              ng-show="selected2" ng-click="selected2 = false"></span>
+    </div>
+    <div ng-class="{'changeCss':selected3===true}">
+        <div ng-click="selected3 = true">
+            <input type="radio" ng-disabled="true">Team Results
+        </div>
+        <span class="glyphicon glyphicon-remove" style="position: absolute;top: 5px;right: 5px;cursor: pointer;"
+              ng-show="selected3" ng-click="selected3 = false"></span>
+    </div>
+    <div ng-class="{'changeCss':selected4===true}">
+        <div ng-click="selected4 = true">
+            <input type="radio" ng-disabled="true">Group Results
+        </div>
+        <span class="glyphicon glyphicon-remove" style="position: absolute;top: 5px;right: 5px;cursor: pointer;"
+              ng-show="selected4" ng-click="selected4 = false"></span>
+    </div>
+    <div ng-class="{'changeCss':selected5===true}">
+        <div ng-click="selected5 = true">
+            <input type="radio" ng-disabled="true">Teams
+        </div>
+        <span class="glyphicon glyphicon-remove" style="position: absolute;top: 5px;right: 5px;cursor: pointer;"
+              ng-show="selected5" ng-click="selected5 = false"></span>
+    </div>
+    <!--<div>-->
+    <!--<table>-->
+    <!--<thead>-->
+    <!--<th>Country</th>-->
+    <!--<th>Fifa_code</th>-->
+    <!--<th>Group_id</th>-->
+    <!--<th>Games Played</th>-->
+    <!--<th>Wins</th>-->
+    <!--<th>Lose</th>-->
+    <!--<th>Points</th>-->
+    <!--<th>goals_for</th>-->
+    <!--<th>goals_against</th>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr ng-repeat="data in scores">-->
+    <!--<td>{{data.country}}</td>-->
+    <!--<td>{{data.fifa_code}}</td>-->
+    <!--<td>{{data.group_id}}</td>-->
+    <!--<td>{{data.games_played}}</td>-->
+    <!--<td>{{data.wins}}</td>-->
+    <!--<td>{{data.losses}}</td>-->
+    <!--<td>{{data.points}}</td>-->
+    <!--<td>{{data.goals_for}}</td>-->
+    <!--<td>{{data.goals_against}}</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+    <!--</table>-->
+    <!--</div>-->
+
+</div>

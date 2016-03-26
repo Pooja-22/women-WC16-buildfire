@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="women-WC16-Widget">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	<!-- Load helper.css to use our helper classes.
-	<link href="../../../../styles/helper.css" rel="stylesheet">
-	-->
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+	<link href="../../../scripts/owlCarousel/owlCarousel.css" rel="stylesheet" />
+
 	<!-- JS -->
 	<script src="../../../scripts/buildfire.js"></script>
-   
- 	<!--
-    <script src="../../../scripts/angular/angular.min.js"></script>
-    <script src="../../../scripts/angular/ui-bootstrap.min.js"></script>
-
-    <script src="../../../scripts/jquery/jquery-1.11.2.min.js"></script>
-    -->
+	<script src="../../../scripts/angular/angular.min.js"></script>
+	<script src="../../../scripts/angular/angular-route.min.js"></script>
+	<script src="../../../scripts/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../../scripts/owlCarousel/owlCarousel.js"></script>
+	<script src="../../../scripts/buildfire/components/carousel/carousel.js"></script>
+	<script src="../control/content/app.js"></script>
+	<script src="../control/content/controllers/main.controller.js"></script>
+	<script src="app.js"></script>
+	<script src="components/config.js"></script>
+	<script src="controllers/widget.controller.js"></script>
 </head>
 <body>
+<div ng-view=""></div>
 </body>
 </html>
