@@ -1,8 +1,8 @@
 {
   "author":"Daniel Hindi"
-,"pluginName":"women-WC16"
-,"pluginDescription":""
-,"supportEmail":""
+,"pluginName":"Test Sms"
+,"pluginDescription":"Test sms functionality "
+,"supportEmail":"Test"
 ,"control":{
   "content":{
     "enabled":true

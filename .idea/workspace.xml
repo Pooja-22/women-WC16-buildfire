@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4006e301-ad5a-481d-92bc-90355b391580" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/control/content/components/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widget/app.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widget/components/config.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control/content/templates/Main.html" afterPath="$PROJECT_DIR$/control/content/templates/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget/templates/Widget.html" afterPath="$PROJECT_DIR$/widget/templates/Widget.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget/app.js" afterPath="$PROJECT_DIR$/widget/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control/content/index.html" afterPath="$PROJECT_DIR$/control/content/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget/index.html" afterPath="$PROJECT_DIR$/widget/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control/content/controllers/main.controller.js" afterPath="$PROJECT_DIR$/control/content/controllers/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget/controllers/widget.controller.js" afterPath="$PROJECT_DIR$/widget/controllers/widget.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.json" afterPath="$PROJECT_DIR$/plugin.json" />
     </list>
     <ignored path="women-WC16-buildfire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widget.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="widget.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/widget/controllers/widget.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6606852" vertical-offset="105" max-vertical-offset="2670">
+            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2670">
               <caret line="34" column="38" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugin.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05226481" vertical-offset="0" max-vertical-offset="574">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/widget/templates/Widget.html" />
         <option value="$PROJECT_DIR$/widget/components/config/config.js" />
         <option value="$PROJECT_DIR$/widget/controllers/widget.controller.js" />
+        <option value="$PROJECT_DIR$/plugin.json" />
       </list>
     </option>
   </component>
@@ -97,9 +98,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="24" />
+    <option name="y" value="52" />
     <option name="width" value="1309" />
-    <option name="height" value="744" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -257,7 +258,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="24" width="1309" height="744" extended-state="6" />
+    <frame x="57" y="52" width="1309" height="716" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -403,8 +404,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/widget/controllers/widget.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6606852" vertical-offset="105" max-vertical-offset="2670">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2670">
           <caret line="34" column="38" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05226481" vertical-offset="0" max-vertical-offset="574">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
